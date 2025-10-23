@@ -10,6 +10,9 @@ spec:
     - secretKey: token
       remoteRef:
         key: k8s-infra-ci-robot-github-token
+    - secretKey: fastly
+      remoteRef:
+        key: fastly-api-key
   secretStoreRef:
     kind: ClusterSecretStore
     name: k8s-infra-prow

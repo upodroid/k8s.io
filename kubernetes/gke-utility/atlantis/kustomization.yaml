@@ -43,6 +43,11 @@ patchesStrategicMerge:
                   secretKeyRef:
                     name: atlantis-vcs
                     key: token
+              - name: FASTLY_API_KEY
+                valueFrom:
+                  secretKeyRef:
+                    name: atlantis-vcs
+                    key: fastly
               - name: ATLANTIS_GH_WEBHOOK_SECRET
                 valueFrom:
                   secretKeyRef:
